@@ -1,0 +1,158 @@
+* {
+    transition: .33s ease all;
+    box-sizing: border-box;
+  }
+  
+  body {
+      margin: 0;
+      padding: 0;
+  }
+  
+  html {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  span {
+    position: absolute;
+    width: 542.5px;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #000000;
+    opacity: 20%;
+  }
+  
+  div.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+      to bottom,
+      #FDE2FF 0%,
+      #FDE2FF 70%,
+      #FFFFFF 0%,
+      #FFFFFF 0%
+    );
+  }
+  
+  div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1034px;
+    height: 580px;
+    margin: 30px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+   
+  .img {
+    width: 301px;
+    height: 383px;
+    margin: 20px 0px 0px 40px;
+  }
+  
+  h1 { 
+    width: 548px;
+    height: 34px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #720060;
+  }
+  
+  h2 {
+    width: 97px;
+    height: 34px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #720060;
+    padding: 20px 0px 0px 0px;
+  }
+  
+  h4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.78px;
+    color: #3F3F3F;
+  }
+  
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1E1E1E;
+    padding: 30px 0px 30px 0px;
+  }
+  
+  .buttons button {
+    box-sizing: border-box;
+    width: 259px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 3px solid #720060;
+    border-radius: 4px;
+    margin: 20px 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-style: 20px;
+    line-height: 24px;
+  }
+  
+  .buttons .btn_buy {
+    background: #720060;
+    color: #FFFFFF;
+  }
+  
+  .buttons .btn_buy:hover {
+    background: #FFFFFF;
+    color: #720060;
+  }
+  
+  .buttons .btn_next {
+    color: #720060;
+  }
+  
+  .buttons .btn_next:hover {
+    background: #002772;
+    color: #FFFFFF;
+  }
+  
+  div.imag {
+    margin: 25px;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  div.text-container {
+    margin: 60px 45px 55px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    div.container {
+      flex-direction: row;
+      width: 100%;
+    }
+  
+    div.imag {
+      height: 420px;
+      min-width: 360px;
+    }
+    
+   div.text-container {
+      margin: 0 60px;
+      max-width: 660px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    div.container {
+      max-width: 1200px;
+    }
+  }
